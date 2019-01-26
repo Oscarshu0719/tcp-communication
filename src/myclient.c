@@ -1,9 +1,3 @@
-/* 
- * MIT License
- * 
- * Copyright (c) 2019 Zi Jun, Xu
- */
-
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -121,7 +115,7 @@ void *receive_messages(void *arg)
     char mid_rcv_sent_msg[] = "__&RCV__";
     char end_rcv_sent_msg[] = "#*!RCV&$";
 
-    /* Contiually receive messages. */
+    /* Continually receive messages. */
     while (recv(socketfd, receive_buffer, sizeof(receive_buffer), 0) != -1)
     {
         char tmp_buffer[MAX_BUFFER_SIZE];
